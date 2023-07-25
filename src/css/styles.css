@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+    background-color: black;
+
+}
+
+.tt{
+    color: white;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.conversion-section {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+}
+
+.decimal-a-binario { background-color: gray; }
+.decimal-a-octal { background-color: gray; }
+.decimal-a-hexadecimal { background-color: gray; }
+.binary-a-decimal { background-color: gray; }
+.octal-a-decimal { background-color: gray; }
+.hexadecimal-a-decimal { background-color: gray; }
+
+h1 {
+    margin-bottom: 30px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="number"],
+input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid blue;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #F5B041  ;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #45a049;
+}

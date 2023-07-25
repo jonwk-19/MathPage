@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html>
+<head>
+    <title>Calculadora de Volumen 3D en cm³</title>
+    <script>
+        function calcularCubo() {
+            var lado = parseFloat(document.getElementById("ladoCubo").value);
+            var volumen = Math.pow(lado, 3);
+            document.getElementById("resultadoCubo").innerHTML = "Volumen del cubo: " + volumen.toFixed(2) + " cm³";
+        }
+
+        function calcularEsfera() {
+            var radio = parseFloat(document.getElementById("radioEsfera").value);
+            var volumen = (4 / 3) * Math.PI * Math.pow(radio, 3);
+            document.getElementById("resultadoEsfera").innerHTML = "Volumen de la esfera: " + volumen.toFixed(2) + " cm³";
+        }
+
+        function calcularCilindro() {
+            var radio = parseFloat(document.getElementById("radioCilindro").value);
+            var altura = parseFloat(document.getElementById("alturaCilindro").value);
+            var volumen = Math.PI * Math.pow(radio, 2) * altura;
+            document.getElementById("resultadoCilindro").innerHTML = "Volumen del cilindro: " + volumen.toFixed(2) + " cm³";
+        }
+    </script>
+</head>
+<body>
+    <h1>Calculadora de Volumen 3D en cm³</h1>
+
+    <h2>Cubo</h2>
+    <label for="ladoCubo">Lado del cubo (cm):</label>
+    <input type="number" id="ladoCubo">
+    <button onclick="calcularCubo()">Calcular Volumen del Cubo</button>
+    <p id="resultadoCubo"></p>
+
+    <h2>Esfera</h2>
+    <label for="radioEsfera">Radio de la esfera (cm):</label>
+    <input type="number" id="radioEsfera">
+    <button onclick="calcularEsfera()">Calcular Volumen de la Esfera</button>
+    <p id="resultadoEsfera"></p>
+
+    <h2>Cilindro</h2>
+    <label for="radioCilindro">Radio del cilindro (cm):</label>
+    <input type="number" id="radioCilindro">
+    <br>
+    <label for="alturaCilindro">Altura del cilindro (cm):</label>
+    <input type="number" id="alturaCilindro">
+    <button onclick="calcularCilindro()">Calcular Volumen del Cilindro</button>
+    <p id="resultadoCilindro"></p>
+</body>
+</html>
+
+</body>
+</html>

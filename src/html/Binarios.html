@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor Numérico</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="tt">Conversiones</h1>
+
+        <!-- Sección de conversión decimal a binario -->
+        <div class="conversion-section decimal-a-binario">
+            <h2>Decimal a Binario</h2>
+            <label for="decimalInput">Decimal:</label>
+            <input type="number" id="decimalInput">
+            <button onclick="decimalToBinary()">Convertir</button>
+            <br>
+            <label for="binaryResult">Binario:</label>
+            <input type="text" id="binaryResult" readonly>
+        </div>
+
+        <!-- Sección de conversión decimal a octal -->
+        <div class="conversion-section decimal-a-octal">
+            <h2>Decimal a Octal</h2>
+            <label for="decimalInput2">Decimal:</label>
+            <input type="number" id="decimalInput2">
+            <button onclick="decimalToOctal()">Convertir</button>
+            <br>
+            <label for="octalResult">Octal:</label>
+            <input type="text" id="octalResult" readonly>
+        </div>
+
+        <!-- Sección de conversión decimal a hexadecimal -->
+        <div class="conversion-section decimal-a-hexadecimal">
+            <h2>Decimal a Hexadecimal</h2>
+            <label for="decimalInput3">Decimal:</label>
+            <input type="number" id="decimalInput3">
+            <button onclick="decimalToHexadecimal()">Convertir</button>
+            <br>
+            <label for="hexadecimalResult">Hexadecimal:</label>
+            <input type="text" id="hexadecimalResult" readonly>
+        </div>
+
+        <!-- Sección de conversión binaria a decimal -->
+        <div class="conversion-section binary-a-decimal">
+            <h2>Binario a Decimal</h2>
+            <label for="binaryInput">Binario:</label>
+            <input type="text" id="binaryInput">
+            <button onclick="binaryToDecimal()">Convertir</button>
+            <br>
+            <label for="decimalResult">Decimal:</label>
+            <input type="number" id="decimalResult" readonly>
+        </div>
+
+        <!-- Sección de conversión octal a decimal -->
+        <div class="conversion-section octal-a-decimal">
+            <h2>Octal a Decimal</h2>
+            <label for="octalInput">Octal:</label>
+            <input type="text" id="octalInput">
+            <button onclick="octalToDecimal()">Convertir</button>
+            <br>
+            <label for="decimalResult2">Decimal:</label>
+            <input type="number" id="decimalResult2" readonly>
+        </div>
+
+        <!-- Sección de conversión hexadecimal a decimal -->
+        <div class="conversion-section hexadecimal-a-decimal">
+            <h2>Hexadecimal a Decimal</h2>
+            <label for="hexadecimalInput">Hexadecimal:</label>
+            <input type="text" id="hexadecimalInput">
+            <button onclick="hexadecimalToDecimal()">Convertir</button>
+            <br>
+            <label for="decimalResult3">Decimal:</label>
+            <input type="number" id="decimalResult3" readonly>
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
