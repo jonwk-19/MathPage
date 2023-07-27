@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AreasPerimetros</title>
+    <link rel="stylesheet" href="../css/stylesa.css">
+    <script src="../js/scriptAP.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="titulo">Áreas y Perímetros</h1>
+        <h2 class="subtitulo">Áreas de Figuras</h2>
+        <div class="areac">
+            <h3 class="textc">Área de un Círculo</h3>
+            <label for="numero">Radio del Círculo</label>
+            <input type="number" id="numero">
+            <br>
+            <button onclick="arearC()">Calcular Área</button>
+            <br>
+            <label for="resultado">Resultado:</label>
+            <input type="text" id="resultado" readonly>
+        </div>
+        <div class="areacu">
+            <h3 class="textc">Área de un Cuadrado</h3>
+            <label for="numero1">Lado del Círculo</label>
+            <input type="number" id="numero1">
+            <br>
+            <button onclick="arearCu()">Calcular Área</button>
+            <br>
+            <label for="resultado1">Resultado:</label>
+            <input type="text" id="resultado1" readonly>
+        </div>
+        <div class="areaT">
+            <h3 class="textc">Área de un Triángulo</h3>
+            <label for="numero2">Base del Triángulo</label>
+            <input type="number" id="numero2">
+            <br>
+            <label for="numero3">Altura del Triángulo</label>
+            <input type="number" id="numero3">
+            <br>
+            <button onclick="arearT()">Calcular Área</button>
+            <br>
+            <label for="resultado2">Resultado:</label>
+            <input type="text" id="resultado2" readonly>
+        </div>
+        <h2 class="subtitulo">Perímetros de Figuras</h2>
+        <div class="perimetroC">
+            <h3 class="textc">Perímetro de un Círculo</h3>
+            <label for="numero4">Radio del Círculo</label>
+            <input type="number" id="numero4">
+            <br>
+            <button onclick="perimetroC()">Calcular Perímetro</button>
+            <br>
+            <label for="resultado3">Resultado:</label>
+            <input type="text" id="resultado3" readonly>
+        </div>
+        <div class="perimetroCu">
+            <h3 class="textc">Perímetro de un Cuadrado</h3>
+            <label for="numero5">Lado del Cuadrado</label>
+            <input type="number" id="numero5">
+            <br>
+            <button onclick="perimetroCu()">Calcular Perímetro</button>
+            <br>
+            <label for="resultado4">Resultado:</label>
+            <input type="text" id="resultado4" readonly>
+        </div>
+        <div class="perimetroT">
+            <h3 class="textc">Perímetro de un Triángulo</h3>
+            <label for="numero6">Lado del Triángulo</label>
+            <input type="number" id="numero6">
+            <br>
+            <button onclick="perimetroT()">Calcular Perímetro</button>
+            <br>
+            <label for="resultado5">Resultado:</label>
+            <input type="text" id="resultado5" readonly>
+        </div>
+    </div>
+</body>
+</html>
